@@ -9,6 +9,7 @@ with gr.Blocks() as demo:
     output = gr.Textbox(label="Output Box")
     greet_btn = gr.Button("Greet")
     greet_btn.click(fn=login, inputs=[username,password], outputs=output, api_name="greet")
-
+  
 
 demo.launch()
+print("Hello world!")
